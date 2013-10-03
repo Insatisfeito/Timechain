@@ -1,0 +1,361 @@
+
+@import "font-awesome";
+
+@font-face {
+  font-family: 'Gotham';
+  src:url(<%= asset_path "Gotham-XLight.otf" %>);
+}
+
+
+
+html, body{
+	font-family: "Gotham";
+	height: 100%;
+	width: 100%;
+}
+
+
+header{
+	height: 8%;
+	background-color: #ff932a;
+	position:fixed;
+ 	top:0px;
+ 	width: 100%;
+ 	border-bottom: solid 3px #D87000;
+}
+
+
+a, a:visited{
+
+	color: #FFF;
+	font-size: 17px;
+}
+
+a:hover, a:focus{
+	color: #ff932a;
+	font-size: 17px;
+	background-color: #FFF;
+	border-radius: 3px;
+	text-decoration: none;
+}
+
+.secondtitle{
+	font-size: 45px;
+	font-weight: lighter;
+		margin-top: 12%;
+	margin-left: 50%;
+
+}
+
+.maintitle{
+	height: 20%;
+	text-align: left;
+	color: #FFF;
+}
+
+.main-content img{
+	height: 15%;
+	margin-left: 50%;
+
+}
+
+.maintitle h1{
+	font-size: 45px;
+	text-transform: uppercase;
+	margin-left: 50px;
+	padding-bottom: 30px;
+}
+
+.maintitle a{
+	background-color: #ff932a;
+	padding: 15px 50px 15px 50px;
+	font-size: 20px;
+	border-radius: 5px;
+	margin-left: 50px;
+}
+
+.maintitle a:hover, a:focus{
+	background-color: #FFF;
+	color: #FF932a;
+
+}
+
+.logo{
+	float: left;
+	display: inline;	
+	padding: 9px;
+	padding-left: 150px;
+	height: 70%;
+}
+
+
+ul a{
+	padding: 10px 30px 10px 30px;
+
+}
+
+
+.navbar ul{
+	color: #FFF;
+	font-size: 17px;
+	padding: 30px 300px 30px 30px;
+	float: right;
+}
+
+.navbar li{
+
+	display: inline;
+
+}
+
+
+.main-content{
+	padding: 90px 0 0 100px;
+	height: 85%;
+	background: url(<%=asset_path "main-bg.png"%>);
+	background-size: cover;
+	background-position: center;
+}
+
+
+.feature-content{
+	text-align: center;
+	padding: 90px 0 0 50px;
+	height: 85%;
+	background-color: #FFF;
+}
+.social-content{
+	display: inline-table;
+	height: 85%;
+	background-color: #1795d0;
+	padding: 150px 0 0 150px;
+	color: #FFF;
+}
+
+.social-content h2{
+	font-size: 48px;
+	width: 45%;
+	padding-bottom: 100px;
+	float: left;
+
+}
+
+.social-content img{
+	height: 70%;
+	float: left;
+
+}
+
+.social-content span{
+	font-size: 80px;
+	margin-top: 50px;
+	padding: 0 50px 50px 0;
+	width: 45%;
+}
+
+
+.contacts-content{
+	height: 95%;
+	background-color: #ff932a;
+	padding: 150px 0 0 150px;
+	color: #FFF;
+}
+
+
+.contacts-content h2{
+	float: right;
+	font-size: 48px;
+	width: 50%;
+	padding-bottom: 100px;
+}
+
+.contacts-content h3{
+	font-size: 25px;
+	padding-bottom: 15px;
+}
+
+
+.contacts-content > div{
+	float: right;
+	width: 25%;
+}
+
+
+
+.feature-content > div{
+	padding-bottom: 50px;
+	display: inline-block;;
+	text-align: center;
+	width: 25%;
+	padding-top: 10px;
+}
+
+.feature-content img{
+	text-align: center;
+	width: 50%;
+	padding-top: 10px;
+}
+
+
+.feature-content p{
+	text-transform: uppercase;
+	color: #1795d0;
+	padding-top:15px;
+	font-size: 20px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.newtask {
+	padding-top: 130px;
+	text-align: center;
+	width: 100%;
+}
+
+
+.newtask a, .newtask a:visited{
+	font-size: 30px;
+	padding: 17px 400px 17px 400px;
+	background-color: #1795d0;
+	border-radius: 5px;
+}	
+
+.newtask a:hover, .newtask a:focus{
+	color: #1795d0;
+	font-size: 30px;
+	padding: 17px 400px 17px 400px;
+	background-color: #fff;
+	border-radius: 10px;
+	border: solid 3px #1795d0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.task{
+
+	margin-top: 70px; 
+	width: 334px;
+	height: 172px;
+	margin-left: 330px;
+
+
+
+}
+
+.show_box_task{
+
+	overflow: hidden;
+	background-color: #fdb930;
+	color: white;
+	text-align: center;
+	padding-top: 10px;
+	height: 25%;
+	font-size: 25px;
+	border-radius: 5px;
+	border-bottom: solid 4px #d67f2a;
+
+}
+
+.show_task{
+
+	float:left;
+	width: 80%;
+}
+
+.show_box_image{
+
+	float:left;
+	width:20%;
+}
+
+.show_task_message {
+
+	font-family: "Gotham";
+	height: 50%;
+	color: #fdb930;
+	font-size: 25px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+
+.show_box{
+
+	overflow: hidden;
+	font-size: 18px;
+	color:#898989;
+
+}
+
+.show_task_date img{
+
+	height: 25px;
+	width: 25px;
+}
+
+.show_task_date {
+
+	float:left;
+	width: 70%;
+}
+
+.show_task_time{
+	float:left;
+	width: 30%; 
+
+}
+
+.show_task_time img{
+
+	height: 25px;
+	width: 25px;
+}
+
+
+.field {
+	padding-top: 30px;
+	text-align: center;
+	color: #fdb930;
+	font-size: 15px;
+	background-color: #FFF;
+
+}
+
+
+
+.badges{
+	display: inline;
+}
+
+
+
+
+.calendar{
+	margin-top: -450px;
+	padding-right: 300px;
+	float: right;
+}

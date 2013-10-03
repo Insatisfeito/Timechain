@@ -1,0 +1,129 @@
+<%= render "navbar" %>
+
+
+<div class="newtask">
+  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">New life objective</a>
+</div>
+
+<div id="collapseOne" class="panel-collapse collapse ">
+      <div class="panel-body">
+      <%= form_for(@task) do |f| %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :color %><br>
+    <%= f.text_field :color %>
+  </div>
+  <div class="field">
+    <%= f.label :total_hours %><br>
+    <%= f.number_field :total_hours %>
+  </div>
+  <div class="field">
+    <%= f.label :end_date %><br>
+    <%= f.datetime_select :end_date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+
+      </div>
+    </div>
+
+
+
+<% @tasks.each do |t| %>
+  
+<div class="task">
+
+  <div class="show_box_task">
+
+    <div class="show_task">
+      <%= t.name %>
+
+    </div>
+    
+    <div class="show_box_image">
+
+     <%= link_to '<i class="icon-remove"></i>'.html_safe , t, method: :delete %> 
+
+    </div>
+
+
+  </div>
+
+  <div class="show_task_message">
+
+  "<%= t.description %>"
+
+  </div>
+
+  <div class = "show_box">
+
+    <div class ="show_task_date">
+
+      <%= image_tag("task_calendar_blue.png") %>
+  
+      <%=  t.end_date.strftime("%d %b %Y") %>
+
+    </div>  
+
+    <div class="show_task_time">
+
+      <%= image_tag("task_time_blue.png") %>
+  
+       <%=  t.total_hours %> H
+
+    </div>
+
+
+  </div>
+
+      
+
+  
+
+</div>
+  
+<% end %>
+
+
+
+<div class="calendar">
+  <%= image_tag("calendar.png") %>
+
+  <div class="newtask2">
+  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2"><h1 class="show_box_task">Add Today's Tasks</h1></a>
+</div>
+
+<div id="collapse2" class="panel-collapse collapse ">
+      <div class="panel-body">
+<form>
+  <% @tasks.each do  |t| %>
+<input type="radio" name="<%= t.name %>" value="<%= t.name %>"><%= t.name %><br>
+
+<%end%><br/><br/><br/>
+Time spent<input ></input></br></br>
+Description<input ></input></br></br>
+<button type="submit">Save</button>
+</form>
+
+
+      </div>
+    </div>
+  
+</div>
+
+
+
+
+
+
